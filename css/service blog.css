@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box; 
+ }
+body {
+    background-image: url(../img/molekul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.service {
+    margin-left: 85px;
+}
+hr {
+    width:39px;
+    background-image: linear-gradient(to right,  yellow, orange);
+    float: left;
+    height: 2px;
+    border: none;
+    margin-top: 14px;
+    margin-right: 3px;
+
+}
+.title {
+    color: thistle;
+    font-size: 24px;
+}
+h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: -23px;
+}
+span {
+    color: orangered;
+}
+.info {
+    color: thistle;
+    margin-top: -23px;
+    font-size: 21px;
+}
+.down .left, .right {
+    float: left;
+    width: 44%;
+    margin-right: 19px;
+    position: relative;
+}
+.down .left .img, .right .img {
+    width: 100%;
+    height: 454px;
+    overflow: hidden;
+}
+.down .left .img img, .right .img img {
+    width: 100%;
+    height: 100%;
+    transition: 311ms;
+}
+.down .left:hover img, .right:hover img {
+    transform: scale(1.1,1.1);
+    opacity: 0.2 ;
+}
+.down .left:hover .img, .right:hover .img{
+    background: orangered;
+}
+.down .left .icon1, .right .icon2{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    z-index: 3;
+    opacity: 0;
+    color: rgb(252, 89, 30);
+    text-shadow: 2px 2px white;
+}
+.down .left:hover .icon1, .right:hover .icon2 {
+    opacity: 1;
+    animation-name: icondown;
+    animation-duration: 311ms;
+    animation-fill-mode: forwards;
+}
+@keyframes icondown {
+    from {
+        top: 0;
+        right: 3px;
+    }
+    to {
+        top: 20px;
+        right: 23px;
+    }
+}
+.down .left .leftinfo, .right .rightinfo {
+    background-color: white;
+    width: 530px;
+    height: 219px;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    padding-top: 24px;
+    padding-left: 24px;
+    border: 1px solid rgb(165, 164, 164, 0.4);
+    overflow: hidden;
+}
+.about  {
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    font-weight: bolder;
+    transition: 311ms;
+}
+.about:hover {
+    color: darkblue;
+}
+.down .left .leftinfo p, .right .rightinfo p {
+    color: rgb(99, 98, 98);
+    font-size: 19px;
+}
+.down .left .leftinfo .fas, .right .rightinfo .fas {
+    position: absolute;
+    right: -51px;
+    bottom: -31px;
+    color: rgba(99, 99, 99, 0.3);
+    font-size:171px;
+}
+.down .left .leftinfo .button, .right .rightinfo .button {
+   padding: 11px 19px;
+   display: inline-block;
+   text-decoration: none;
+    width: 22%;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, grey 50%, white 50%);
+    color: orangered;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(145, 211, 211, 0.13);
+    transition: 711ms;
+   
+}
+.down .left .leftinfo .button:hover, .right .rightinfo .button:hover {
+    background-image: linear-gradient(to right,  rgb(199, 80, 0) , rgb(228, 150, 5) );
+    color: white;
+}
